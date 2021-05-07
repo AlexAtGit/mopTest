@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\DEVELOPMENT\Trials\Interview\MastersOfPie\Output\Debug\</OutputPath>
+    <DocumentationFile>C:\DEVELOPMENT\Trials\Interview\MastersOfPie\Output\Debug\mop.Calculator.xml</DocumentationFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>C:\DEVELOPMENT\Trials\Interview\MastersOfPie\Output\Release\</OutputPath>
+    <DocumentationFile>C:\DEVELOPMENT\Trials\Interview\MastersOfPie\Output\Release\mop.ComplexCalculator.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\mop.BaseCalculator\mop.BaseCalculator.csproj" />
+  </ItemGroup>
+
+</Project>
